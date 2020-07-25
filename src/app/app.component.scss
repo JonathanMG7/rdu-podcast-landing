@@ -1,0 +1,57 @@
+#main-container {
+    background-color: rgba($color: #ffffff, $alpha: 0.1);
+    box-sizing: border-box;
+    min-width: 671px;
+    overflow: auto;
+    padding: 47px;
+    height: 100vh;
+    width: 100%;
+}
+#links-container {
+    display: inline-block;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    width: 50%;
+    .logo-main {
+        margin: auto;
+        width: 80%;
+    }
+}
+#play-list-container {
+    width: 49%;
+    text-align: center;
+}
+#play-list-container {
+    display: inline-block;
+    .g-ytsubscribe {
+        width: 100%;
+    }
+}
+#buttons-container {
+    display: flex;
+    justify-content: center;
+    h3 {
+        color: #ffffff;
+        font-weight: bold;
+    }
+    .pod-button {
+        margin: auto;
+        width: 15%;
+    }
+}
+@media only screen and (max-width: 1100px) {
+    #links-container {
+        height: auto;
+        justify-content: center;
+        margin-bottom: 38px;
+        text-align: center;
+        width: 100%;
+    }
+    #play-list-container {
+        width: 100%;
+    }
+}
+.full-width {
+    width: 100%;
+}
