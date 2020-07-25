@@ -1,24 +1,53 @@
 <div id="main-container">
   <div id="links-container">
     <img src="https://i.ibb.co/W5Kpkwz/LOGO-RDU-YOUTUBE-00039.png" class="logo-main" alt="Main Logo">
+    <h3>Escucha el Podcast del RDU:</h3>
     <div id="buttons-container">
-      <h3>Escucha el Podcast del RDU:</h3>
-      <img class="pod-button" src="assets/spotify.png" alt="Escúchanos en Spotify">
-      <img class="pod-button" src="assets/ivoox.png" alt="Escúchanos en Ivoox">
-      <img class="pod-button" src="assets/itunes.png" alt="Escúchanos en iTunes">
+      <a target="_blank" href="https://bit.ly/spotifyrdu">
+        <img class="pod-button" src="assets/spotify.png" alt="Escúchanos en Spotify">
+      </a>
+      <a target="_blank" href="https://bit.ly/ivooxrdu">
+        <img class="pod-button" src="assets/ivoox.png" alt="Escúchanos en Ivoox">
+      </a>
+      <a target="_blank" href="https://bit.ly/applerdu">
+        <img class="pod-button" src="assets/itunes.png" alt="Escúchanos en iTunes">
+      </a>
     </div>
   </div>
   <div id="play-list-container">
-    <div class="full-width">
+    <div class="full-width youtube-subscriber">
       <div class="g-ytsubscribe" data-channelid="UCbKFAkt_qYU3dFc2-m9PSUw" data-layout="full" data-theme="dark" data-count="hidden"></div>
     </div>
-    <iframe
-      width="560"
-      height="315"
-      src="https://www.youtube.com/embed/videoseries?list=PLpyoizH7p6bMvRBPckg_2rCQkakaa4HGS"
-      frameborder="0"
-      allow="autoplay; encrypted-media"
-      allowfullscreen>
-    </iframe>
+    <div id="iframe-container">
+      <iframe
+        src="https://www.youtube.com/embed/videoseries?list=PLpyoizH7p6bMvRBPckg_2rCQkakaa4HGS"
+        frameborder="0"
+        allow="autoplay; encrypted-media"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+  <div id="social-footer">
+    <h3>Sigue al Rincón del United</h3>
+    <div class="social-container">
+      <a target="_blank" href="https://bit.ly/twrdu">
+        <img class="social-button" src="assets/tw.png" alt="Síguenos en twitter">
+      </a>
+      <a target="_blank" href="https://bit.ly/IGRDU">
+        <img class="social-button" src="assets/ig.png" alt="Síguenos en instagram">
+      </a>
+      <a target="_blank" href="https://bit.ly/rdu-fb">
+        <img class="social-button" src="assets/fb.png" alt="Síguenos en facebook">
+      </a>
+    </div>
+    <h4>Familia RDU</h4>
+    <div class="social-allies">
+      <p>
+        <span *ngFor="let account of socAccMain"><a target="_blank" href="https://twitter.com/{{account}}">{{account}} <img class="alli-button" src="assets/tw-alli.png" alt="{{account}} aliado RDU"></a></span>
+      </p>
+      <p>
+        <span *ngFor="let account of socAccSec"><a target="_blank" href="https://twitter.com/{{account}}">{{account}} <img class="alli-button" src="assets/tw-alli.png" alt="{{account}} aliado RDU"></a></span>
+      </p>
+    </div>
   </div>
 </div>

@@ -4,3 +4,10 @@ body {
     background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
     margin: 0px !important;
 }
+a {
+    color: white;
+    text-decoration: none;
+    &visited {
+        color: white;
+    }
+}

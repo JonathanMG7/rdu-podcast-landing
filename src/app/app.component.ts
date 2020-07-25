@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'podcast-rdu';
+  title = 'Podcast del RDU';
+
+  socAccMain = [
+    'MUnitedES',
+    'Sp_ManUtd',
+    'ManUtdLa'
+  ];
+
+  socAccSec = [
+    'ManUnitedMaster',
+    'MUFC_Peru',
+    'ManUtdMX'
+  ];
 }
